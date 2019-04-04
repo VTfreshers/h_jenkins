@@ -7,21 +7,21 @@ pipeline
 			{
 				steps
 				{
-					ssh echo 'fetching code'
+					 echo 'fetching code'
 				}
 			}
 			stage ("build")
 			{
 				steps
 				{
-					ssh echo 'building code'
+					echo 'building code'
 				}
 			}
 			stage ("test")
 			{
 				steps
 				{
-					ssh echo 'testing code'
+					echo 'testing code'
 				}
 			}
 		}
