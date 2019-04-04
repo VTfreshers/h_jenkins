@@ -26,6 +26,7 @@ pipeline
 						steps
 						{
 							echo 'testing code A'
+							sleep 30
 						}
 					}
 					stage ("test B")
@@ -33,6 +34,7 @@ pipeline
 						steps
 						{
 							echo 'testing code B'
+							sleep 40
 						}
 					}
 					stage ("test C")
@@ -40,6 +42,7 @@ pipeline
 						steps
 						{
 							echo 'testing code C'
+							sleep 50
 						}
 					}
 					stage ("test D")
