@@ -1,0 +1,41 @@
+pipeline
+{
+	agent any
+		stages
+		{
+			stage ("fetch")
+			{
+				steps
+				{
+					echo 'fetching code'
+				}
+			}
+			stage ("build")
+			{
+				steps
+				{
+					echo 'building code'
+				}
+			}
+			stage ("test")
+			{
+				parallel
+				{
+					stage ("test A")
+					{
+						steps
+						{
+							echo 'testing code A'
+						}
+					}
+					stage ("test B")
+					{
+						steps
+						{
+							echo 'testing code B'
+						}
+					}
+				}
+			}
+		}
+}
