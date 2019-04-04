@@ -35,6 +35,20 @@ pipeline
 							echo 'testing code B'
 						}
 					}
+					stage ("test C")
+					{
+						steps
+						{
+							echo 'testing code C'
+						}
+					}
+					stage ("test D")
+					{
+						steps
+						{
+							echo 'testing code D'
+						}
+					}
 				}
 			}
 		}
